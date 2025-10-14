@@ -33,11 +33,13 @@ body {
   background-size: cover;
   height: 100vh;
   background-position: 80% center;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
 }
+
 .hero_text {
   position: absolute;
   bottom: 20%;
@@ -60,22 +62,28 @@ body {
   font-family: "Roboto" sans-serif;
   line-height: 1.19;
   font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .hero_button {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 2.3rem;
-
-  min-height: 2.3rem;
-
+  position: absolute;
+   width: 13vw;        
+  height: 13vw;       
+  max-width: 4rem;    
+  max-height: 4rem;
+  min-width: 2.5rem;    
+  min-height: 2.5rem;  
   background-color: white;
   border-radius: 50%;
-  margin-top: auto;
-  margin-bottom: 6rem;
+  margin-top: auto;    
+  bottom: 7rem;     
 }
 
-.header_menu_img {
-  object-fit: contain;
+.hero_button_img {
+ width: 50%; 
+  height: auto;
 }
+
