@@ -6,27 +6,35 @@
 @use 'layout/footer';
 @use 'pages/index'; */
 
-
-
-.header {    
-  width: 2.3rem;  
+.header {
+  width: 2.3rem;
   height: 2.3rem;
   align-items: center;
   flex-grow: 0;
-  margin: 0 6rem 16rem 0;  
   background-color: #6c933e;
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;  
-  z-index: 1000;   
+  left: 0;
+  z-index: 1000;
 }
 
 .header_menu_img {
-    width: 0.8rem;
-    height: 0.7rem;
+  width: 0.8rem;
+  height: 0.7rem;
 }
 
-
+.hero {
+  background-image: url(/images/cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: right center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
