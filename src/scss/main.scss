@@ -1,15 +1,16 @@
-/* RESET Y ESTILOS GLOBALES */
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Roboto Slab", serif;
+
 body {
   margin: 0;
   padding: 0;
-  $font-primary: "Roboto", sans-serif;
-$font-secondary: "Roboto Slab", serif;
 }
 
-/* HEADER */
 .header {
-  width: 2.3rem;
-  height: 2.3rem;
+  max-width: 2.3rem;
+  width: 100%;
+  max-height: 2.3rem;
+  height: 100%;
   background-color: #6c933e;
   display: flex;
   justify-content: center;
@@ -21,11 +22,11 @@ $font-secondary: "Roboto Slab", serif;
 }
 
 .header_menu_img {
-  width: 0.8rem;
-  height: auto;
+  max-width: 0.8rem;
+  width: 100%; 
+  height: auto; 
+  object-fit: contain;
 }
-
-/* HERO SECTION */
 .hero {
   background-image: url(/images/cover.jpeg);
   background-repeat: no-repeat;
@@ -60,8 +61,6 @@ $font-secondary: "Roboto Slab", serif;
   font-size: 1.5rem;
   margin-bottom: 3rem;
 }
-
-/* BOTONES CIRCULARES (COMPARTIDO) */
 .hero_button,
 .navigation_button {
   display: flex;
@@ -92,8 +91,12 @@ $font-secondary: "Roboto Slab", serif;
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero_button_img,
@@ -102,7 +105,6 @@ $font-secondary: "Roboto Slab", serif;
   height: auto;
 }
 
-/* SHOPPING SECTION */
 .shopping {
   display: flex;
   flex-direction: column;
@@ -133,7 +135,6 @@ $font-secondary: "Roboto Slab", serif;
   color: #4a4a4a;
 }
 
-/* BOTONES DE ACCIÓN (COMPARTIDO) */
 .shopping_button,
 .product_button {
   max-width: 11.5rem;
@@ -167,7 +168,6 @@ $font-secondary: "Roboto Slab", serif;
   color: white;
 }
 
-/* PRODUCTS SECTION */
 .products {
   display: grid;
   justify-items: center;
@@ -204,8 +204,6 @@ $font-secondary: "Roboto Slab", serif;
   font-weight: bold;
   line-height: 2.14;
 }
-
-/* NAVIGATION SECTION */
 .navigation {
   display: flex;
   flex-direction: column;
@@ -231,7 +229,6 @@ $font-secondary: "Roboto Slab", serif;
   display: inline-block;
 }
 
-/* FOOTER */
 .footer_copy,
 .footer_slogan {
   font-size: 0.8rem;
@@ -246,3 +243,18 @@ $font-secondary: "Roboto Slab", serif;
 .footer_heart {
   color: green;
 }
+
+@media (min-width: 768px) {
+  .header {
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+
+  .header_menu_img {
+    max-width: 4rem;
+  }
+}
+
+
+
+
