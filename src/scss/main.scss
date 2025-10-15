@@ -1,9 +1,20 @@
 $font-primary: "Roboto", sans-serif;
 $font-secondary: "Roboto Slab", serif;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 .header {
@@ -23,8 +34,8 @@ body {
 
 .header_menu_img {
   max-width: 0.8rem;
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   object-fit: contain;
 }
 .hero {
@@ -33,10 +44,14 @@ body {
   background-size: cover;
   background-position: 80% center;
   height: 100vh;
+  width: 100%;
+  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
   color: white;
 }
 
@@ -45,6 +60,7 @@ body {
   bottom: 20%;
   text-align: center;
   max-width: 19.7rem;
+  width: 100%;
 }
 
 .hero_title {
@@ -136,18 +152,17 @@ body {
 }
 
 .shopping_button,
-.product_button {
-  max-width: 11.5rem;
+.products_button {
   font-size: 1.5rem;
   text-decoration: none;
   border-radius: 2rem;
-  line-height: 2.25;
+  line-height: 1.5;
   text-align: center;
   transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 .shopping_button:hover,
-.product_button:hover {
+.products_button:hover {
   transform: scale(1.1);
   color: black;
 }
@@ -155,15 +170,17 @@ body {
 .shopping_button {
   border: solid 2px #6c933e;
   background-color: white;
-  padding: 0.3rem 0.7rem;
+  padding: 0;
+  max-width: 11.5rem;
+  margin-top: 1rem;
   color: #6c933e;
 }
 
-.product_button {
+.products_button {
   padding: 0 1.4rem;
   margin-bottom: 0.6rem;
-  font-weight: 500;
   border: none;
+  line-height: 3rem;
   background-color: #6c933e;
   color: white;
 }
@@ -224,9 +241,9 @@ body {
 .navigation_link {
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 1.5rem;
   color: white;
   line-height: 1.88;
-  display: inline-block;
 }
 
 .footer_copy,
@@ -246,15 +263,135 @@ body {
 
 @media (min-width: 768px) {
   .header {
-    max-width: 5rem;
-    max-height: 5rem;
+    max-width: 4rem;
+    max-height: 4rem;
   }
 
   .header_menu_img {
     max-width: 4rem;
   }
+  .hero_text {
+    position: absolute;
+    text-align: center;
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 12rem;
+  }
+
+  .hero_title {
+    font-size: 5rem;
+    line-height: 1.67;
+    font-weight: bold;
+    margin: 6rem 0 1rem 0;
+  }
+
+  .hero_paragraph {
+    text-align: center;
+    line-height: 1.19;
+    font-size: 3rem;
+    margin: 0 5rem 0.5rem 5rem;
+  }
+  .hero_button {
+    max-width: 5rem;
+    max-height: 5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    position: absolute;
+    bottom: 4rem;
+  }
+
+  .shopping_header_title {
+    font-size: 1.5rem;
+  }
+
+  .shopping_title {
+    font-size: 2rem;
+  }
+
+  .shopping_text {
+    font-size: 2.2rem;
+  }
+
+  .shopping_button {
+    max-width: 15rem;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .products_button {
+    border-radius: 2rem;
+    text-align: center;
+    font-size: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .products {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    margin-top: 5rem;
+  }
+
+  .products_header_title,
+  .products_title,
+  .products_button {
+    grid-column: 1 / -1;
+  }
+
+  .products_header_title {
+    font-size: 1rem;
+  }
+
+  .products_title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .products_img {
+    max-width: 10rem;
+  }
+
+  .products_button {
+    max-width: 18rem;
+    line-height: 2;
+    font-size: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .navigation_button {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+  .navigation {
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem 0.5rem 2rem 0.8rem;
+    gap: 4rem;
+  }
+  .shop_navigation {
+    text-align: left;
+    margin-left: 5rem;
+  }
+
+  .footer {
+    order: 1;
+  }
+
+  .shop_navigation {
+    order: 2;
+  }
+
+  .social_media_navigation {
+    order: 3;
+  }
+
+  .footer_copy {
+    font-size: 1.3rem;
+  }
+  .footer_slogan {
+    font-size: 1.3rem;
+  }
 }
-
-
-
-
