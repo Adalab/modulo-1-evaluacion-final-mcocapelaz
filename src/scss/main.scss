@@ -87,3 +87,53 @@ body {
   height: auto;
 }
 
+.shopping {
+    display: flex;
+    flex-direction: column;    
+    margin-left: 3rem;
+    margin-top: 1rem;    
+}
+
+.shopping_header_title {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  color: #6c933e;
+  margin: 0;
+}
+
+.shopping_title {
+  text-transform: uppercase;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0.3rem 0;
+}
+
+.shopping_text {
+  width: 290px;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: left;
+  color: var(--greyish-brown-d-9-e-4-cc);
+  margin: 0;
+}
+.shopping_button {
+   
+  width: 30%;          
+  padding: 0.9rem 1rem;  
+  font-size: 1rem;  
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.6rem; 
+  background-color: #2b8a3e; 
+  color: #ffffff;
+  }
+
+
+
+
+
+
