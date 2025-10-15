@@ -3,30 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
     <title>Comienzos compartidos</title>
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
-    <!-- HEADER SECTION -->
-
+    <!-- HEADER -->
     <header class="header">
-      <div class="header_container">
-        <a href="https://adalab.es/"></a>
+      <a href="https://adalab.es/">
         <img src="/images/ico-menu.svg" alt="Menú" class="header_menu_img" />
-      </div>
+      </a>
     </header>
 
     <main class="main">
-      <!-- HERO SECTION -->
-      <section class="hero">
+      <!-- HERO -->
+      <section id="hero" class="hero">
         <div class="hero_text">
           <h1 class="hero_title">Comienzos compartidos</h1>
           <p class="hero_paragraph">
@@ -34,39 +29,38 @@
           </p>
         </div>
         <a href="#products" class="hero_button">
-          <img src="/images/ico-scroll-down.svg" class="hero_button_img" />
+          <img src="/images/ico-scroll-down.svg" alt="Bajar"
+            class="hero_button_img" />
         </a>
       </section>
 
-      <!-- SHOPPING SECTION -->
-
+      <!-- SHOPPING -->
       <section class="shopping">
         <p class="shopping_header_title">Historias, moda y ropa deportiva</p>
         <h2 class="shopping_title">Tu tienda de deporte</h2>
-                  <p class="shopping_text">
+        <p class="shopping_text">
           El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa
           deportiva para hombre y mujer te ofrece las últimas tecnologías, a la
           altura de tu rendimiento, para que superes tu mejor marca personal
         </p>
-        <a href="#products" class="shopping_button">
-          <span>Comprar</span>
-        </a>
+        <a href="#products" class="shopping_button">Comprar</a>
       </section>
 
-      <!-- PRODUCTS SECTION -->
+      <!-- PRODUCTS -->
       <section id="products" class="products">
         <p class="products_header_title">
           ¡Prepáralos con tus marcas favoritas!
         </p>
         <h3 class="products_title">Vuelta al cole</h3>
+
         <div class="products_info">
           <img
             src="/images/lpbts-mod05-img01-desk.png"
             alt="Niña con mochila escolar"
-            class="products_img"
-          /> 
+            class="products_img" />
           <p class="products_text">Mochilas escolares</p>
         </div>
+
         <div class="products_info">
           <img
             src="/images/lpbts-mod05-img04-mob.png"
@@ -74,44 +68,51 @@
             class="products_img" />
           <p class="products_text">Estuches</p>
         </div>
-        <div class="product_info">
+
+        <div class="products_info">
           <img
             src="/images/lpbts-mod05-img03-mob.png"
             alt="Niña con bolsa de deporte"
             class="products_img" />
           <p class="products_text">Bolsas de deporte</p>
         </div>
-        <a href class="product_button">Empezar ahora</a>
+
+        <a href="#" class="product_button">Empezar ahora</a>
       </section>
 
-      <!-- NAVIGATION SECTION -->
-<div class="navigation_container">
-  
-      <nav class="navigation">         
+      <!-- NAVIGATION & FOOTER -->
+      <nav class="navigation">
         <ul class="shop_navigation">
-          <li><a href="https://adalab.es/" class="navigation_link">Zapatillas</a></li>
+          <li><a href="https://adalab.es/"
+              class="navigation_link">Zapatillas</a></li>
           <li><a href="https://adalab.es/" class="navigation_link">Ropa</a></li>
-          <li><a href="https://adalab.es/" class="navigation_link">Niño/a</a></li>
-          <li><a href="https://adalab.es/" class="navigation_link">Destacados</a></li>
+          <li><a href="https://adalab.es/"
+              class="navigation_link">Niño/a</a></li>
+          <li><a href="https://adalab.es/"
+              class="navigation_link">Destacados</a></li>
           <li><a href="https://adalab.es/" class="navigation_link">Tips</a></li>
         </ul>
-        <a href="#products" class="navigation_button">
-          <img src="/images/ico-arrow.png" class="navigation_button_img"/>
+
+        <a href="#hero" class="navigation_button">
+          <img src="/images/ico-arrow.png" alt="Subir"
+            class="navigation_button_img" />
         </a>
-        <ul class="shop_navigation">
-          <li><a href="https://adalab.es/" class="navigation_link">Twitter</a></li>
-          <li><a href="https://adalab.es/" class="navigation_link">Instagram</a></li>
-          <li><a href="https://adalab.es/" class="navigation_link">YouTube</a></li>
+
+        <ul class="social_media_navigation">
+          <li><a href="https://adalab.es/"
+              class="navigation_link">Twitter</a></li>
+          <li><a href="https://adalab.es/"
+              class="navigation_link">Instagram</a></li>
+          <li><a href="https://adalab.es/"
+              class="navigation_link">YouTube</a></li>
         </ul>
+
         <footer class="footer">
-        <p class="footer_copy">&copy; 2025</p>
-        <p class="footer_slogan">we <span class="footer_heart">❤︎</span> run</p>
-      </footer>
+          <p class="footer_copy">&copy; 2025</p>
+          <p class="footer_slogan">we <span class="footer_heart">❤︎</span>
+            run</p>
+        </footer>
       </nav>
-      </div>
     </main>
   </body>
 </html>
-      
-
-      
