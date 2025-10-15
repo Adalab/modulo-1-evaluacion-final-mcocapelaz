@@ -50,7 +50,7 @@ body {
 }
 
 .hero_title {
-  font-family: "Roboto Slab" sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 1.67;
@@ -59,7 +59,7 @@ body {
 }
 
 .hero_paragraph {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.19;
   font-size: 1.5rem;
   margin-bottom: 3rem;
@@ -145,7 +145,8 @@ body {
   justify-items: center;
   background-color: #d9e4cc;
   text-align: center;
-  font-family: "Roboto Slab" sans-serif;
+  font-family: "Roboto Slab", sans-serif;
+  padding-bottom: 5rem;
   }
 
   .products_header_title { 
@@ -189,7 +190,7 @@ body {
   border-radius: 22.5px;
   font-size: 1.3rem; 
   font-weight: 500; 
-  font-family: "Roboto" sans-serif; 
+  font-family: "Roboto", sans-serif; 
    font-style: normal;
   line-height: 2.25;
   text-decoration: none;
@@ -199,6 +200,77 @@ body {
   color: white;  
   }
 
+  .navigation_container {
+    background-color: #4a4a4a;  
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;  
+    position: relative;    
+  gap: 2rem;      
+    padding: 60.5px 8.4px 33.5px 13.4px;
+    background-color: #4a4a4a;  
+    font-family: "Roboto", sans-serif;    
+  }  
+
+  .navigation_button {
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  transform: translate(-50%, -500%);
+  z-index: 10;
+  width: 13vw;
+  height: 13vw;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .shop_navigation {
+   list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  }
+
+  .navigation_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;    
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+}
+
+.footer_copy {      
+  font-size: 14px;    
+  text-align: center;
+  color: white;
+  margin-top: 5px; 
+}
+
+.footer_slogan {  
+  flex-grow: 0;  
+  font-family: "Roboto", sans-serif;   
+  font-size: 14px;  
+  text-align: center;
+  color: white;
+}
+
+  
+
+ 
+
+ 
  
 
  
